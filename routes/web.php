@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\ShowController;
+use App\Http\Controllers\SiteController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,9 +23,12 @@ Route::get('/', function () {
 //     return "Hello World";
 // });
 
-Route::get('/home', [ShowController::class, 'home']);
-Route::get('/skills', [ShowController::class, 'skills']);
-Route::get('/my_team', [ShowController::class, 'my_team']);
-Route::get('/what_we_do', [ShowController::class, 'what_we_do']);
-Route::get('/portfolio', [ShowController::class, 'portfolio']);
-Route::get('/testimonial', [ShowController::class, 'testimonial']);
+
+
+
+Route::get('/home', [SiteController::class, 'home']);
+Route::get('/skills', [SiteController::class, 'skills']);
+Route::get('/my_team', [SiteController::class, 'my_team']);
+Route::get('/what_we_do', [SiteController::class, 'what_we_do']);
+Route::get('/portfolio', [SiteController::class, 'portfolio']);
+Route::get('/testimonial', [SiteController::class, 'testimonial']);
