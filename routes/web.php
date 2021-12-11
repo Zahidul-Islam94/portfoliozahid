@@ -24,3 +24,8 @@ Route::get('/', function () {
 // });
 
 Route::get('/home', [ShowController::class, 'home']);
+Route::get('/skills', [ShowController::class, 'skills']);
+Route::get('/my_team', [ShowController::class, 'my_team']);
+Route::get('/what_we_do', [ShowController::class, 'what_we_do']);
+Route::get('/portfolio', [ShowController::class, 'portfolio']);
+Route::get('/testimonial', [ShowController::class, 'testimonial']);
