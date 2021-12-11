@@ -24,4 +24,7 @@ class SiteController extends Controller
     function  testimonial(){
         return view("testimonial");
     }
+    function  get_in_touch(){
+        return view("get_in_touch");
+    }
 }

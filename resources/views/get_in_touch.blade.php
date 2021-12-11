@@ -1,9 +1,9 @@
 @extends('layout.app')
 
-@section('title','My Team')
+@section('title','Get In Touch')
 
 @section('content')
 
-<h1>MY TEAM</h1>
+<h1>GET IN TOUCH</h1>
 
 @endsection

@@ -14,9 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 
 // Route::get('/home', function(){
@@ -26,9 +24,10 @@ Route::get('/', function () {
 
 
 
-Route::get('/home', [SiteController::class, 'home']);
+Route::get('/', [SiteController::class, 'home']);
 Route::get('/skills', [SiteController::class, 'skills']);
 Route::get('/my_team', [SiteController::class, 'my_team']);
 Route::get('/what_we_do', [SiteController::class, 'what_we_do']);
 Route::get('/portfolio', [SiteController::class, 'portfolio']);
 Route::get('/testimonial', [SiteController::class, 'testimonial']);
+Route::get('/get_in_touch', [SiteController::class, 'get_in_touch']);

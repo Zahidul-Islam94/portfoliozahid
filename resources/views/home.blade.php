@@ -1,1 +1,9 @@
-<h1>This is New Home Page</h1>
+@extends('layout.app')
+
+@section('title','Home')
+
+@section('content')
+
+<h1>HOME</h1>
+
+@endsection

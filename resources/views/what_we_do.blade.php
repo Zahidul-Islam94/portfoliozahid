@@ -1,1 +1,9 @@
-<h1>what_we_do</h1>
+@extends('layout.app')
+
+@section('title','What We Do')
+
+@section('content')
+
+<h1>WHAT WE DO</h1>
+
+@endsection
