@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ShowController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,6 +19,8 @@ Route::get('/', function () {
 });
 
 
-Route::get('/home', function(){
-    return "Hello World";
-});
+// Route::get('/home', function(){
+//     return "Hello World";
+// });
+
+Route::get('/home', [ShowController::class, 'home']);
