@@ -38,9 +38,18 @@ hr{
 
 /* Global Style End */
 
+/* common css */
 
+a{
+	color: white!important;
+  }
 
 /* Navbar Style */
+/* navColor */
+
+.navColor{
+	background-color: #3E8E7E;
+}
 .navigation .navbar .container .navbar-brand img{
 	width: 70px;
 	height: 40px;
@@ -54,6 +63,7 @@ hr{
 .navbar .container .collapse ul li a:hover{
 	color: #00AEEF;
 }
+
 /* Navbar Style End */
 
 

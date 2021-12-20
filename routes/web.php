@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\LoopController;
+use App\Http\Controllers\MySkillController;
 use App\Http\Controllers\SiteController;
 use Illuminate\Support\Facades\Route;
 
@@ -31,3 +33,7 @@ Route::get('/what_we_do', [SiteController::class, 'what_we_do']);
 Route::get('/portfolio', [SiteController::class, 'portfolio']);
 Route::get('/testimonial', [SiteController::class, 'testimonial']);
 Route::get('/get_in_touch', [SiteController::class, 'get_in_touch']);
+
+Route::get('/loop',[LoopController::class,'loopLearn']);
+Route::get('/create-skill',[MySkillController::class,'skillCreate']);
+Route::get('/manage-skill',[MySkillController::class,'skillManage']);
