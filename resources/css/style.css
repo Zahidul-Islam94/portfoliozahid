@@ -1,0 +1,187 @@
+/*----------------------------------------------------------------------------------
+
+	Template Name: Portfolio Personal Website
+	Template URL: https://www.zahidulislam.info
+	Description: Personal Website
+	Author: Md. Zahidul Islam
+	Author URL: http://www.samiulislam.com
+	License: GNU General Public 
+	Version: 2020.0.1
+-----------------------------------------------------------------------------------
+
+	1. Typography
+	2. Navbar Area
+	3. Skills Area
+	4. My Teams Area
+	5. What We Do Area
+	6. Portfolio Area
+	7. Testimonial Area
+	8. Get In Touch Area
+	8. Footer Area
+
+
+-----------------------------------------------------------------------------------*/
+
+/* Global Style */
+body{
+	margin:0; 
+	padding: 0;
+
+}
+
+hr{
+	width: 12%;
+	background-color: red;
+	height: 2px;
+	margin-top: 0;
+}
+
+/* Global Style End */
+
+
+
+/* Navbar Style */
+.navigation .navbar .container .navbar-brand img{
+	width: 70px;
+	height: 40px;
+}
+.navbar{
+	background-color: #273c75;
+}
+.navbar .container .collapse ul li a{
+	color: white;
+}
+.navbar .container .collapse ul li a:hover{
+	color: #00AEEF;
+}
+/* Navbar Style End */
+
+
+
+/* About Style */
+.about{
+	background-image:  url('images/banner.jpg');
+	background-size: cover;
+}
+.about  .row .col-md-3 .img img{
+	width: 250px;
+	height: 320px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 3px solid #00AEEF;
+	border-radius: 6px;
+} 
+
+.about  .row .col-md-3{
+	background-color: rgba(0, 159, 138, .8)
+}
+.about  .row .col-md-3 h6{
+	text-decoration: underline;
+	letter-spacing: 2px;
+}
+
+.about  .row .col-md-3 .img-desc{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.about  .row .col-md-3 .social-link a{
+	color: rgba(253, 199, 11, 1.0);
+}
+.about  .row .col-md-3 .social-link a:hover{
+	background-color: #F57F7F;
+	width: 20px;
+	height: 20px;
+	border-radius: 5px;
+	font-size: 20px;
+	color: #00A19C;
+} 
+.about  .row .col-md-3 .img-desc a{
+	color: white;
+}
+.about .row .col-md-9 .about-desc{
+	background-color: rgba(0, 0, 0, .6);
+	margin-top: 310px;
+	padding: 20px;
+}
+
+ /* About Style End */
+
+
+ /* Skills Style */
+ .skills .container .col-md-4 img{
+ 	width: 100%
+ }
+ /* Skills Style End */
+
+
+
+
+/* My Teams Style */
+.my-team{
+	background-color: rgba(0, 162, 170, .2);
+}
+/* My Teams Style */
+
+
+
+/* What We Do Style */
+.what-we-do .container .row .col-md-4 .id{
+	box-shadow: 2px 2px 8px rgba(0, 0, 0, .5);
+	padding: 20px;
+}
+/* What We Do Style End */
+
+
+
+/* Portfolio Style */
+.portfolio{
+	background-color: rgba(0, 162, 170, .2);
+}
+.portfolio .container .row .col-md-4 a img:hover{
+	width: 90%;
+	height: 90%; 
+}
+.portfolio .container .row .col-md-12 ul li a{
+	text-decoration: none;
+	color: black;
+	font-weight: 500;
+}
+.portfolio .container .row .col-md-12 ul li a:hover{
+	background-color: red;
+	padding: 5px 15px;
+	color: white;
+	border-radius: 20px;
+
+}
+/* Portfolio Style End */
+
+
+/* Testimonial Style */
+.testimonial .container .owl-carousel .profile img{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: 1px solid #00AEEF;
+}
+.testimonial .container .owl-carousel .profile{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}  
+/* Testimonial Style End */
+
+
+
+/* Get In Touch Style */
+.get-in-touch{
+	background-color: rgba(0, 162, 170, .2);
+}
+/* Get In Touch Style End */
+
+
+
+
+
+
