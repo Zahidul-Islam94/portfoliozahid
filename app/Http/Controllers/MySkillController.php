@@ -8,10 +8,10 @@ use Illuminate\Http\Request;
 
 class MySkillController extends Controller
 {
-    function skillCreate(){
+    function skillCreate(Request $request){
         $skill=MySkill::create([
-                'language'      => 'css',
-                'percentage'    => '75'
+                'language'      => $request->language,
+                'percentage'    => $request->percentage
         ]);
         return $skill;
         /* if($skill){
@@ -23,7 +23,7 @@ class MySkillController extends Controller
     }
     function skillManage(){
         $skills = MySkill::get();
-        return view('skills',['skills'=>$skills]);
+        return view('manage-skill',['skills'=>$skills]);
     }
     function skillUpdate(){
         $result = MySkill::find(6)->update([

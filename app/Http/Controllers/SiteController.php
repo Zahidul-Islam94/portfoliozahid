@@ -27,4 +27,7 @@ class SiteController extends Controller
     function  get_in_touch(){
         return view("get_in_touch");
     }
+    function createStudent(){
+        return view('create-student');
+    }
 }

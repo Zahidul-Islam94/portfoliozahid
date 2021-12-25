@@ -33,9 +33,10 @@ Route::get('/what_we_do', [SiteController::class, 'what_we_do']);
 Route::get('/portfolio', [SiteController::class, 'portfolio']);
 Route::get('/testimonial', [SiteController::class, 'testimonial']);
 Route::get('/get_in_touch', [SiteController::class, 'get_in_touch']);
+Route::get('/create-student', [SiteController::class, 'createStudent']);
 
 Route::get('/loop',[LoopController::class,'loopLearn']);
-Route::get('/create-skill',[MySkillController::class,'skillCreate']);
+Route::post('/create-skill',[MySkillController::class,'skillCreate']);
 Route::get('/manage-skill',[MySkillController::class,'skillManage']);
 Route::get('/update-skill',[MySkillController::class,'skillUpdate']);
 Route::get('/delete-skill',[MySkillController::class,'skillDelete']);
