@@ -37,3 +37,7 @@ Route::get('/get_in_touch', [SiteController::class, 'get_in_touch']);
 Route::get('/loop',[LoopController::class,'loopLearn']);
 Route::get('/create-skill',[MySkillController::class,'skillCreate']);
 Route::get('/manage-skill',[MySkillController::class,'skillManage']);
+Route::get('/update-skill',[MySkillController::class,'skillUpdate']);
+Route::get('/delete-skill',[MySkillController::class,'skillDelete']);
+Route::get('/manage-agent',[MySkillController::class,'agentSelect']);
+
