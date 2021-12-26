@@ -5,6 +5,7 @@
 @section('content')
 
 <h1>HOME</h1>
+<h1>SYED ZAHID</h1>
 <!-- About section -->
 <section class="about text-center mt-5">
     <div class="container-fluid">
