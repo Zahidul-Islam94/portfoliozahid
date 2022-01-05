@@ -7,7 +7,7 @@
       <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-link active" aria-current="page" href="{{ url('/') }}">Home</a>
-          <a class="nav-link" href="{{ url('skills') }}">Skills</a>
+          <a class="nav-link" href="{{ url('manage-skill') }}">Skills</a>
           <a class="nav-link" href="{{ url('my_team') }}">My Team</a>
           <a class="nav-link" href="{{ url('what_we_do') }}">What We Do</a>
           <a class="nav-link" href="{{ url('portfolio') }}">Portfolio</a>

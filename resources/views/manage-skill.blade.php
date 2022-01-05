@@ -26,7 +26,7 @@
                         <td>{{ $loop->index + 1}}</td>
                         <td>{{ $skill->language }}</td>
                         <td>{{ $skill->percentage }}</td>
-                        <td> <button class="btn btn-primary">Update</button></td>
+                        <td><button class="btn btn-primary">Update</button></td>
                         <td><button class="btn btn-danger">Delete</button></td>
                     </tr>
                     @endforeach

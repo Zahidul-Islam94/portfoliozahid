@@ -3,6 +3,7 @@
 use App\Http\Controllers\LoopController;
 use App\Http\Controllers\MySkillController;
 use App\Http\Controllers\SiteController;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -41,4 +42,11 @@ Route::get('/manage-skill',[MySkillController::class,'skillManage']);
 Route::get('/update-skill',[MySkillController::class,'skillUpdate']);
 Route::get('/delete-skill',[MySkillController::class,'skillDelete']);
 Route::get('/manage-agent',[MySkillController::class,'agentSelect']);
+
+
+Route::get('/name',function(){
+    return "Postman";
+});
+
+
 

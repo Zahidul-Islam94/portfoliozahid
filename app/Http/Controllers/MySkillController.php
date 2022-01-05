@@ -23,6 +23,7 @@ class MySkillController extends Controller
     }
     function skillManage(){
         $skills = MySkill::get();
+        // return response()->json(['skills'=>$skills]);
         return view('manage-skill',['skills'=>$skills]);
     }
     function skillUpdate(){
