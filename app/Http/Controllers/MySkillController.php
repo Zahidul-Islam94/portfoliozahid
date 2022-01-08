@@ -46,6 +46,15 @@ class MySkillController extends Controller
             return "Failed to delete data";
         }
     }
+
+    function skDelete($id)
+    {
+        $delete = MySkill::find($id);
+        $delete->delete();
+        return response()->json(['success'=>'Data deleted successful!']) ;
+        
+    }
+
     function agentSelect(){
         $agents = MySkill::where('id',8)->first();
         return $agents;

@@ -44,6 +44,8 @@ Route::get('/delete-skill',[MySkillController::class,'skillDelete']);
 Route::get('/manage-agent',[MySkillController::class,'agentSelect']);
 
 
+Route::delete('deletes/{id}',[MySkillController::class,'skDelete']);
+
 Route::get('/name',function(){
     return "Postman";
 });
