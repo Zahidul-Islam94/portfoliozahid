@@ -27,8 +27,7 @@
                         <td>{{ $skill->language }}</td>
                         <td>{{ $skill->percentage }}</td>
                         <td><button class="btn btn-primary">Update</button></td>
-                        {{-- <td><button class="btn btn-danger" href={{"delete/" $skill['id']}}>Delete</button></td> --}}
-                        <td><a class="btn btn-danger" href={{"deletes/" $skill['id']}}>delete</a></td>
+                        <td><button class="btn btn-danger">Delete</button></td>
                     </tr>
                     @endforeach
                     
