@@ -14,6 +14,7 @@
         <div class="row">
             <h2 class="text-center p-3 bg-success text-white">My skill</h2>
             <div class="col-md-12">
+                <button class="btn btn-success"><a href="{{url('/create-student') }}">Create skill</a></button>
                 <table class="table tabel-striped">
                     <tr>
                         <th>Id</th>
@@ -27,7 +28,7 @@
                         <td>{{ $skill->language }}</td>
                         <td>{{ $skill->percentage }}</td>
                         <td><button class="btn btn-primary">Update</button></td>
-                        <td><button class="btn btn-danger">Delete</button></td>
+                        <td><button class="btn btn-danger" onclick="deleteSkill({{ $skill->id }})" >Delete</button></td>
                     </tr>
                     @endforeach
                     
@@ -37,5 +38,8 @@
     </div>
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="{{ asset('js/deleteSkill.js') }}"></script>
+
 </body>
 </html>

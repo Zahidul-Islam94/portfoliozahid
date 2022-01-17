@@ -40,7 +40,7 @@ Route::get('/loop',[LoopController::class,'loopLearn']);
 Route::post('/create-skill',[MySkillController::class,'skillCreate']);
 Route::get('/manage-skill',[MySkillController::class,'skillManage']);
 Route::get('/update-skill',[MySkillController::class,'skillUpdate']);
-Route::get('/delete-skill',[MySkillController::class,'skillDelete']);
+Route::post('/delete-skill',[MySkillController::class,'skillDelete']);
 Route::get('/manage-agent',[MySkillController::class,'agentSelect']);
 
 

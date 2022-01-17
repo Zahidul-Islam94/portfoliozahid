@@ -37,14 +37,9 @@ class MySkillController extends Controller
             return "Failed to update data";
         }
     }
-    function skillDelete(){
-        $result = MySkill::where('id',2)->delete();
-        if($result){
-            return "Data deleted successful!";
-        }
-        else{
-            return "Failed to delete data";
-        }
+    function skillDelete(Request $request){
+        $result = MySkill::where('id',$request->id)->delete();
+        return response()->json(['success'=>(bool)$result]);
     }
     function agentSelect(){
         $agents = MySkill::where('id',8)->first();
